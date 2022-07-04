@@ -1,0 +1,22 @@
+/* @import url(normalize.css); */
+@import url(header.css);
+
+:root {
+    --base-white: #fff;
+}
+
+.body-wrapper {
+    margin: 0 16px;
+}
+
+@media screen and (min-width: 744px) {
+    .body-wrapper {
+        margin: 0 24px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .body-wrapper {
+        margin: 0 99px;
+    }
+}
