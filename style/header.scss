@@ -2,7 +2,6 @@
   .header {
     .container {
       position: relative;
-      border: 1px solid blue;
         .navbar {
           min-height: 80px;
           display: flex;
@@ -215,6 +214,7 @@
   .header {
     .container {
       .navbar {
+        margin: 0 50px;
         .logo {
           max-width: 263px;
           margin: 15px 0;
@@ -257,6 +257,19 @@
           li {
             a {
               color: var(--text-body);
+              &::after {
+                position: absolute;
+                content: "";
+                background-color: var(--text-body);
+                bottom: -5px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                transition: 0.3s ease all;
+              }
+              &:hover::after {
+                width: 100%;
+              }
             }
           }
           button {
@@ -273,6 +286,16 @@
       }
     }
     
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .header {
+    .container {
+      .navbar {
+        margin: 0 100px;
+      }
+    }
   }
 }
 
