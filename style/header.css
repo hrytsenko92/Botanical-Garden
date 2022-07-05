@@ -1,21 +1,21 @@
 @media screen and (min-width: 375px) {
-  .header {
-    min-height: 100vh;
-    position: relative; }
-    .header .navbar {
-      background-color: gray;
+  .header .container {
+    position: relative;
+    border: 1px solid blue; }
+    .header .container .navbar {
       min-height: 80px;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: space-between; }
-      .header .navbar .logo {
+      .header .container .navbar .logo {
         max-width: 215px;
         height: auto;
         object-fit: cover;
         object-position: center;
         margin: 15px; }
-      .header .navbar .nav-links {
+      .header .container .navbar .nav-links {
+        min-height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -24,61 +24,72 @@
         margin: 0;
         padding: 0;
         transform: translateY(-100%);
-        transition: 0.4s ease all;
-        background-color: #475f45;
+        background-color: var(--primary);
         z-index: 10;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr 8fr;
+        grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr 7fr;
         justify-content: space-between;
         justify-items: center;
         align-items: center;
         padding-inline-start: 0px; }
-        .header .navbar .nav-links.active {
+        .header .container .navbar .nav-links.active {
           transform: translateX(0%); }
-        .header .navbar .nav-links .hide-menu {
+        .header .container .navbar .nav-links .hide-menu {
           grid-column: 1/2;
           grid-row: 1/2;
-          display: block; }
-        .header .navbar .nav-links .home {
+          display: block;
+          font-size: 23px;
+          line-height: 25px;
+          font-weight: 400;
+          color: #fff; }
+        .header .container .navbar .nav-links .home {
           grid-column: 1/2;
           grid-row: 2/3; }
-        .header .navbar .nav-links .visit {
+        .header .container .navbar .nav-links .visit {
           grid-column: 1/2;
           grid-row: 3/4; }
-        .header .navbar .nav-links .exhibitions {
+        .header .container .navbar .nav-links .exhibitions {
           grid-column: 1/2;
           grid-row: 4/5; }
-        .header .navbar .nav-links .programs {
+        .header .container .navbar .nav-links .programs {
           grid-column: 1/2;
           grid-row: 5/6; }
-        .header .navbar .nav-links .store {
+        .header .container .navbar .nav-links .store {
           grid-column: 1/2;
           grid-row: 6/7; }
-        .header .navbar .nav-links .membership {
+        .header .container .navbar .nav-links .membership {
           grid-column: 1/2;
           grid-row: 7/8; }
-        .header .navbar .nav-links li {
+        .header .container .navbar .nav-links li {
           list-style-type: none; }
-          .header .navbar .nav-links li a {
+          .header .container .navbar .nav-links li a {
             text-decoration: none;
-            color: #fff;
+            color: var(--base-white);
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
             position: relative; }
-        .header .navbar .nav-links button {
-          border: none;
-          outline: none;
+            .header .container .navbar .nav-links li a::after {
+              position: absolute;
+              content: "";
+              background-color: #fff;
+              bottom: -5px;
+              left: 0;
+              width: 0%;
+              height: 2px;
+              transition: 0.3s ease all; }
+            .header .container .navbar .nav-links li a:hover::after {
+              width: 100%; }
+        .header .container .navbar .nav-links button {
+          width: 169px;
+          height: 46px;
           cursor: pointer;
-          padding: 0.75rem 1rem;
-          margin: 0 1rem;
-          border-radius: 6px;
-          background: transparent;
-          border: 2px solid #fff;
+          border: 2px solid var(--base-white);
           color: #fff;
+          background-color: inherit;
           font-weight: 500; }
-      .header .navbar .nav-links::before {
+      .header .container .navbar .nav-links::before {
         content: "";
         background-image: url("../img/leaf.svg");
         background-repeat: no-repeat;
@@ -89,23 +100,23 @@
         bottom: 0px;
         left: 0px;
         opacity: 0.07; }
-      .header .navbar .brgr-btn {
+      .header .container .navbar .brgr-btn {
         display: block;
         z-index: 50;
         position: relative;
         cursor: pointer; }
-        .header .navbar .brgr-btn svg {
+        .header .container .navbar .brgr-btn svg {
           position: absolute;
-          top: -40px;
+          top: -30px;
           right: 0;
-          width: 80px;
-          height: 80px; }
-        .header .navbar .brgr-btn .burger {
+          width: 60px;
+          height: 60px; }
+        .header .container .navbar .brgr-btn .burger {
           filter: url(#gooeyness); }
-        .header .navbar .brgr-btn .x {
+        .header .container .navbar .brgr-btn .x {
           transform: scale(0);
           transition: transform 400ms; }
-        .header .navbar .brgr-btn .line {
+        .header .container .navbar .brgr-btn .line {
           fill: none;
           stroke: black;
           stroke-width: 6px;
@@ -113,40 +124,82 @@
           stroke-linejoin: round;
           transform-origin: 50%;
           transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms; }
-        .header .navbar .brgr-btn .x .line {
-          stroke-width: 5.5px; }
-        .header .navbar .brgr-btn .active .line {
+        .header .container .navbar .brgr-btn .x .line {
+          stroke-width: 5.5px;
+          stroke: white; }
+        .header .container .navbar .brgr-btn .active .line {
           transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms; }
-        .header .navbar .brgr-btn .active .x {
+        .header .container .navbar .brgr-btn .active .x {
           transform: scale(1);
           transition: transform 400ms 350ms; }
-        .header .navbar .brgr-btn .plate5 .line {
+        .header .container .navbar .brgr-btn .plate5 .line {
           transition: stroke-dasharray 400ms 100ms, stroke-dashoffset 400ms 100ms, transform 400ms 100ms; }
-        .header .navbar .brgr-btn .plate5 .line1 {
+        .header .container .navbar .brgr-btn .plate5 .line1 {
           stroke-dasharray: 40 40; }
-        .header .navbar .brgr-btn .plate5 .line2 {
+        .header .container .navbar .brgr-btn .plate5 .line2 {
           stroke-dasharray: 21 39; }
-        .header .navbar .brgr-btn .plate5 .line3 {
+        .header .container .navbar .brgr-btn .plate5 .line3 {
           stroke-dasharray: 21 39; }
-        .header .navbar .brgr-btn .plate5 .line4 {
+        .header .container .navbar .brgr-btn .plate5 .line4 {
           stroke-dasharray: 40 40; }
-        .header .navbar .brgr-btn .plate5 .x {
+        .header .container .navbar .brgr-btn .plate5 .x {
           transition: transform 400ms 50ms; }
-        .header .navbar .brgr-btn .active.plate5 .line {
+        .header .container .navbar .brgr-btn .active.plate5 .line {
           transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, transform 400ms; }
-        .header .navbar .brgr-btn .active.plate5 .line1 {
+        .header .container .navbar .brgr-btn .active.plate5 .line1 {
           stroke-dasharray: 1 40;
           stroke-dashoffset: -33px; }
-        .header .navbar .brgr-btn .active.plate5 .line2 {
+        .header .container .navbar .brgr-btn .active.plate5 .line2 {
           stroke-dasharray: 5 39;
           stroke-dashoffset: -37px; }
-        .header .navbar .brgr-btn .active.plate5 .line3 {
+        .header .container .navbar .brgr-btn .active.plate5 .line3 {
           stroke-dasharray: 5 39;
           stroke-dashoffset: -37px; }
-        .header .navbar .brgr-btn .active.plate5 .line4 {
+        .header .container .navbar .brgr-btn .active.plate5 .line4 {
           stroke-dasharray: 1 40;
           stroke-dashoffset: -33px; }
-        .header .navbar .brgr-btn .active.plate5 .x {
+        .header .container .navbar .brgr-btn .active.plate5 .x {
           transition: transform 400ms 50ms; } }
+@media screen and (min-width: 992px) {
+  .header .container .navbar .logo {
+    max-width: 263px;
+    margin: 15px 0; }
+  .header .container .navbar .nav-links {
+    min-height: 0;
+    width: 70%;
+    transform: translateY(0);
+    background-color: inherit;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+    .header .container .navbar .nav-links .hide-menu {
+      display: none; }
+    .header .container .navbar .nav-links .home {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .header .container .navbar .nav-links .visit {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .header .container .navbar .nav-links .exhibitions {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .header .container .navbar .nav-links .programs {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+    .header .container .navbar .nav-links .store {
+      grid-column: 5/6;
+      grid-row: 1/2; }
+    .header .container .navbar .nav-links .membership {
+      grid-column: 6/7;
+      grid-row: 1/2; }
+    .header .container .navbar .nav-links li a {
+      color: var(--text-body); }
+    .header .container .navbar .nav-links button {
+      border: 2px solid var(--primary);
+      color: var(--primary); }
+  .header .container .navbar .nav-links::before {
+    display: none; }
+  .header .container .navbar .brgr-btn {
+    display: none; } }
 
 /*# sourceMappingURL=header.css.map */

@@ -10,42 +10,58 @@
 <body>
     <div class="body-wrapper">
       <header class="header">
+        <div class="container">
           <nav class="navbar">
-              <img src="img/logo.svg" class="logo" alt="logo">
-              <ul class="nav-links">
-                  <li class="hide-menu">Menu</li>
-                  <li class="home"><a href="#">Home</a></li>
-                  <li class="visit"><a href="#">Visit</a></li>
-                  <li class="exhibitions"><a href="#">Exhibitions</a></li>
-                  <li class="programs"><a href="#">Programs & Events</a></li>
-                  <li class="store"><a href="#">Store</a></li>
-                  <button class="membership">Membership</button>
-              </ul>
-              <div class="brgr-btn" id="burger">
-                <svg>
-                  <defs>
-                    <filter id="gooeyness">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
-                      <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-                    </filter>
-                  </defs>
+            <img src="img/logo.svg" class="logo" alt="logo">
+            <ul class="nav-links">
+                <li class="hide-menu">Menu</li>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="visit"><a href="#">Visit</a></li>
+                <li class="exhibitions"><a href="#">Exhibitions</a></li>
+                <li class="programs"><a href="#">Programs & Events</a></li>
+                <li class="store"><a href="#">Store</a></li>
+                <button class="membership">Membership</button>
+            </ul>
+            <div class="brgr-btn" id="burger">
+              <svg>
+                <defs>
+                  <filter id="gooeyness">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+                    <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                  </filter>
+                </defs>
+              </svg>
+              <div class="plate plate5" onclick="this.classList.toggle('active')">
+                <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 30,35 H 70 " />
+                  <path class="line line2" d="M 50,50 H 30 L 34,32" />
+                  <path class="line line3" d="M 50,50 H 70 L 66,68" />
+                  <path class="line line4" d="M 30,65 H 70 " />
                 </svg>
-                <div class="plate plate5" onclick="this.classList.toggle('active')">
-                  <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                    <path class="line line1" d="M 30,35 H 70 " />
-                    <path class="line line2" d="M 50,50 H 30 L 34,32" />
-                    <path class="line line3" d="M 50,50 H 70 L 66,68" />
-                    <path class="line line4" d="M 30,65 H 70 " />
-                  </svg>
-                  <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                    <path class="line" d="M 34,32 L 66,68" />
-                    <path class="line" d="M 66,32 L 34,68" />
-                  </svg>
-                </div>
+                <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                  <path class="line" d="M 34,32 L 66,68" />
+                  <path class="line" d="M 66,32 L 34,68" />
+                </svg>
               </div>
-          </nav>
+            </div>
+        </nav>
+        </div>
       </header>
+      <main class="main">
+        <section class="intro">
+          <div class="info-wrap">
+            <h1 class="intro__h1">A beatiful adventure awaits</h1>
+            <span class="intro__span">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</span>
+            <div class="intro__btn-wrap">
+              <button class="intro__buy-btn">Buy Tickets</button><button class="intro__info-btn">Learn More</button>
+            </div>
+          </div>
+          <div class="image-wrap">
+            <img class="intro__image" src="img/intro.png" alt="garden">
+          </div>
+        </section>
+      </main>
     </div>
     <script src="js/header.js"></script>
 </body>

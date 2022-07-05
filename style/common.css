@@ -1,18 +1,26 @@
 @import url(normalize.css);
 @import url(header.css);
+@import url(intro.css);
 
 :root {
     --base-white: #fff;
+    --base-black: #000;
+    --text-body: #414840;
+    --primary: #475F45;
+    --header: #343D33;
 }
 
 .body-wrapper {
     margin: 0 auto;
     position: relative;
 }
+.body-wrapper .main {
+    
+}
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 992px) {
     .body-wrapper {
-        margin: 0 auto;
+        margin: 0 24px;
     }
 }
 

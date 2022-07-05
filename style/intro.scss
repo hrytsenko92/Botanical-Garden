@@ -1,0 +1,71 @@
+@media screen and (min-width: 375px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    justify-content: center;
+    align-items: center;
+    .info-wrap {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px; /////
+      .intro__h1 {
+        font-size: 34px;
+        line-height: 37px;
+        font-weight: 400;
+        color: var(--header);
+        text-align: center;
+        margin: 10px 0;
+      }
+      .intro__span {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        color: var(--text-body);
+        text-align: center;
+      }
+      .intro__btn-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        button {
+          width: 165px;
+          height: 46px;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 700;
+          border: none;
+        }
+        .intro__buy-btn {
+          background-color: var(--primary);
+          color: var(--base-white);
+        }
+        .intro__info-btn {
+          border: 2px solid var(--primary);
+          color: var(--primary);
+        }
+      }
+    }
+    .image-wrap {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 55px;
+        .intro__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+  }
+}
