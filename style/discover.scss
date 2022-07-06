@@ -84,7 +84,65 @@
 @media screen and (min-width: 744px) {
     .discover {
         .discover-wrap {
-            
+            margin: 0 105px;
+            .info-block {
+                align-items: flex-start;
+                .info-h2 {
+                    font-size: 40px;
+                    line-height: 50px;
+                    text-align: start;
+                }
+                .info-p {
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: start;
+                }
+                .info-btn {
+                    width: 185px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .discover {
+        margin: 0 -50px;
+        .discover-wrap {
+            margin: 0 50px;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+            gap: 30px;
+            .pots-image {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin: 0;
+            }
+            .info-block  {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                .info-h2 {
+                    margin: 0;
+                }
+                .info-p  {
+                    margin: 32px 0;
+                }
+            }
+            .chairs-image {
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .discover {
+        margin: 0 -100px;
+        .discover-wrap {
+            margin: 0 100px;
+            gap: 50px;
         }
     }
 }

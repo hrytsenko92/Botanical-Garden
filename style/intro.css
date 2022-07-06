@@ -4,7 +4,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 64px; }
     .intro .info-wrap {
       grid-column: 1/2;
       grid-row: 1/2;
@@ -76,7 +77,8 @@
         object-position: center; } }
 @media screen and (min-width: 744px) {
   .intro {
-    margin: 0 159px; }
+    margin: 0 159px;
+    padding-bottom: 70px; }
     .intro .info-wrap .intro__h1 {
       text-align: center justify;
       font-size: 45px;
@@ -91,7 +93,8 @@
 @media screen and (min-width: 992px) {
   .intro {
     margin: 56px 0 0;
-    grid-template-columns: 1fr 10% 1fr;
+    padding-bottom: 115px;
+    grid-template-columns: 1fr 5% 1fr;
     grid-template-rows: 1fr;
     justify-content: space-between;
     align-items: center; }
