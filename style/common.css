@@ -4,6 +4,7 @@
 @import url(header.css);
 @import url(intro.css);
 @import url(discover.css);
+@import url(news.css);
 
 :root {
   --base-white: #fff;

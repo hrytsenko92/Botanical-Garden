@@ -1,0 +1,52 @@
+@media screen and (min-width: 375px) {
+  .news {
+    .news-wrap {
+      .news-title {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .title-h2 {
+          font-family: "Libre Baskerville", serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 37px;
+          text-align: center;
+          text-transform: capitalize;
+          margin: 16px 0;
+        }
+        .title-all-post {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+          .hr-line {
+            display: inline-block;
+            width: 48px;
+            height: 2px;
+            background-color: var(--primary);
+            opacity: 0.4;
+          }
+          .view {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin: 0 12px 0 20px;
+          }
+          .arrow {
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+            object-position: center center;
+          }
+        }
+      }
+      .big-card-wrap {
+      }
+    }
+  }
+}
