@@ -15,12 +15,15 @@
           text-align: center;
           text-transform: capitalize;
           margin: 16px 0;
+          color: var(--header);
         }
         .title-all-post {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 32px;
+          color: var(--primary);
           .hr-line {
             display: inline-block;
             width: 48px;
@@ -46,6 +49,197 @@
         }
       }
       .big-card-wrap {
+        .plants {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto auto auto;
+          .plants-img {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+          }
+          .plants-span {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin: 20px 0 12px;
+            font-family: "Libre Baskerville", serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 25px;
+            text-align: center;
+            color: var(--primary);
+          }
+          .plants-p {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            margin: 0 0 12px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--text-body);
+          }
+          .plants-date {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--text-body);
+          }
+        }
+        .small-card-wrap {
+          .lush {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            .lush-img {
+              grid-column: 1/2;
+              grid-row: 1/2;
+              margin: 20px 0;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            }
+            .lush-span {
+                grid-column: 1/2;
+                grid-row: 2/3;
+              font-family: "Libre Baskerville", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 23px;
+              line-height: 25px;
+              text-align: center;
+              color: var(--primary);
+            }
+            .lush-p {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                margin: 12px 0;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: var(--text-body);
+            }
+            .lush-date {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                margin-bottom: 20px;
+              font-style: italic;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: var(--text-body);
+            }
+          }
+          .exotic {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            border-top: 1px solid var(--news-block);
+            border-bottom: 1px solid var(--news-block);
+            .exotic-img {
+              grid-column: 1/2;
+              grid-row: 1/2;
+              margin: 20px 0;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            }
+            .exotic-span {
+                grid-column: 1/2;
+                grid-row: 2/3;
+              font-family: "Libre Baskerville", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 23px;
+              line-height: 25px;
+              text-align: center;
+              color: var(--primary);
+            }
+            .exotic-p {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                margin: 12px 0;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: var(--text-body);
+            }
+            .exotic-date {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                margin-bottom: 20px;
+              font-style: italic;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: var(--text-body);
+            }
+          }
+          .soil {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            .soil-img {
+              grid-column: 1/2;
+              grid-row: 1/2;
+              margin: 20px 0;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            }
+            .soil-span {
+                grid-column: 1/2;
+                grid-row: 2/3;
+              font-family: "Libre Baskerville", serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 23px;
+              line-height: 25px;
+              text-align: center;
+              color: var(--primary);
+            }
+            .soil-p {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                margin: 12px 0;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: var(--text-body);
+            }
+            .soil-date {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                margin-bottom: 20px;
+              font-style: italic;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              text-align: center;
+              color: var(--text-body);
+            }
+          }
+        }
       }
     }
   }
