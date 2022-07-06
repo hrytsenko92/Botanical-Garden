@@ -13,18 +13,22 @@
       justify-content: center;
       align-items: center; }
       .intro .info-wrap .intro__h1 {
+        font-family: "Libre Baskerville", serif;
+        font-style: normal;
+        font-weight: 400;
         font-size: 34px;
         line-height: 37px;
-        font-weight: 400;
-        color: var(--header);
         text-align: center;
+        text-transform: capitalize;
+        color: var(--header);
         margin: 26px 0 16px; }
       .intro .info-wrap .intro__span {
+        font-style: normal;
+        font-weight: 300;
         font-size: 20px;
         line-height: 30px;
-        font-weight: 300;
-        color: var(--text-body);
         text-align: center;
+        color: var(--text-body);
         margin-bottom: 24px; }
       .intro .info-wrap .intro__btn-wrap {
         width: 100%;
@@ -41,7 +45,10 @@
           font-size: 14px;
           line-height: 16px;
           font-weight: 700;
-          border: none; }
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer; }
         .intro .info-wrap .intro__btn-wrap .intro__buy-btn {
           grid-column: 1/2;
           grid-row: 1/2;
@@ -61,7 +68,7 @@
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      padding: 0 55px; }
+      padding: 0 39px; }
       .intro .image-wrap .intro__image {
         width: 100%;
         height: auto;
@@ -69,8 +76,9 @@
         object-position: center; } }
 @media screen and (min-width: 744px) {
   .intro {
-    margin: 0 175px; }
+    margin: 0 159px; }
     .intro .info-wrap .intro__h1 {
+      text-align: center justify;
       font-size: 45px;
       line-height: 49px;
       font-weight: 400; }
@@ -83,7 +91,7 @@
 @media screen and (min-width: 992px) {
   .intro {
     margin: 56px 0 0;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 10% 1fr;
     grid-template-rows: 1fr;
     justify-content: space-between;
     align-items: center; }
@@ -92,15 +100,26 @@
       grid-row: 1/2;
       align-items: flex-start; }
       .intro .info-wrap .intro__h1 {
-        text-align: start; }
+        text-align: start;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 57px;
+        line-height: 63px;
+        text-transform: capitalize;
+        margin-bottom: 16px; }
       .intro .info-wrap .intro__span {
-        text-align: start; }
+        text-align: start;
+        margin-bottom: 32px; }
       .intro .info-wrap .intro__btn-wrap {
         grid-template-columns: auto auto;
         justify-content: start; }
+        .intro .info-wrap .intro__btn-wrap button {
+          width: 188px;
+          height: 56px; }
     .intro .image-wrap {
-      grid-column: 2/3;
-      grid-row: 1/2; }
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding: 0; }
       .intro .image-wrap .intro__image {
         max-width: 478px; } }
 
