@@ -1,121 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/common.css">
-    <title>Mist Gardens</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/common.css">
+  <title>Mist Gardens</title>
 </head>
+
 <body>
-    <div class="body-wrapper">
-      <header class="header">
-        <div class="container">
-          <nav class="navbar">
-            <img src="img/logo.svg" class="logo" alt="logo">
-            <ul class="nav-links">
-                <li class="hide-menu">Menu</li>
-                <li class="home"><a href="#">Home</a></li>
-                <li class="visit"><a href="#">Visit</a></li>
-                <li class="exhibitions"><a href="#">Exhibitions</a></li>
-                <li class="programs"><a href="#">Programs & Events</a></li>
-                <li class="store"><a href="#">Store</a></li>
-                <button class="membership">Membership</button>
-            </ul>
-            <div class="brgr-btn" id="burger">
-              <svg>
-                <defs>
-                  <filter id="gooeyness">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
-                    <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
-                  </filter>
-                </defs>
+  <div class="body-wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <img src="img/logo.svg" class="logo" alt="logo">
+          <ul class="nav-links">
+            <li class="hide-menu">Menu</li>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="visit"><a href="#">Visit</a></li>
+            <li class="exhibitions"><a href="#">Exhibitions</a></li>
+            <li class="programs"><a href="#">Programs & Events</a></li>
+            <li class="store"><a href="#">Store</a></li>
+            <li class="membership-li"><button class="membership">Membership</button></li>
+          </ul>
+          <div class="brgr-btn" id="burger">
+            <svg>
+              <defs>
+                <filter id="gooeyness">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                    result="gooeyness" />
+                  <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="plate plate5" onclick="this.classList.toggle('active')">
+              <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 30,35 H 70 " />
+                <path class="line line2" d="M 50,50 H 30 L 34,32" />
+                <path class="line line3" d="M 50,50 H 70 L 66,68" />
+                <path class="line line4" d="M 30,65 H 70 " />
               </svg>
-              <div class="plate plate5" onclick="this.classList.toggle('active')">
-                <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 30,35 H 70 " />
-                  <path class="line line2" d="M 50,50 H 30 L 34,32" />
-                  <path class="line line3" d="M 50,50 H 70 L 66,68" />
-                  <path class="line line4" d="M 30,65 H 70 " />
-                </svg>
-                <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                  <path class="line" d="M 34,32 L 66,68" />
-                  <path class="line" d="M 66,32 L 34,68" />
-                </svg>
-              </div>
+              <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                <path class="line" d="M 34,32 L 66,68" />
+                <path class="line" d="M 66,32 L 34,68" />
+              </svg>
             </div>
+          </div>
         </nav>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="intro">
+        <div class="info-wrap">
+          <h1 class="intro__h1">A beatiful adventure awaits</h1>
+          <span class="intro__span">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis
+            nunc</span>
+          <div class="intro__btn-wrap">
+            <button class="intro__buy-btn">Buy Tickets</button><button class="intro__info-btn">Learn More</button>
+          </div>
         </div>
-      </header>
-      <main class="main">
-        <section class="intro">
-          <div class="info-wrap">
-            <h1 class="intro__h1">A beatiful adventure awaits</h1>
-            <span class="intro__span">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</span>
-            <div class="intro__btn-wrap">
-              <button class="intro__buy-btn">Buy Tickets</button><button class="intro__info-btn">Learn More</button>
+        <div class="image-wrap">
+          <img class="intro__image" src="img/intro.png" alt="garden">
+        </div>
+      </section>
+      <section class="discover">
+        <div class="discover-wrap">
+          <div class="pots-image">
+            <img class="pots" src="img/pots.png" alt="pots">
+          </div>
+          <div class="chairs-image">
+            <img src="img/chairs.png" alt="chairs" class="chairs">
+          </div>
+          <div class="info-block">
+            <h2 class="info-h2">Discover yourself with nature</h2>
+            <p class="info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
+            <button class="info-btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-wrap">
+          <div class="news-title">
+            <h2 class="title-h2">News & Updates</h2>
+            <div class="title-all-post">
+              <div class="hr-line"></div><span class="view">View all posts</span><img src="img/arrow-right.svg"
+                alt="arrow" class="arrow">
             </div>
           </div>
-          <div class="image-wrap">
-            <img class="intro__image" src="img/intro.png" alt="garden">
-          </div>
-        </section>
-        <section class="discover">
-          <div class="discover-wrap">
-            <div class="pots-image">
-              <img class="pots" src="img/pots.png" alt="pots">
+          <div class="big-card-wrap">
+            <div class="plants">
+              <img src="img/plants.png" alt="plants" class="plants-img">
+              <span class="plants-span">Plants Around Us</span>
+              <p class="plants-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem
+                ipsum dolor sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <span class="plants-date">December 23, 2021</span>
             </div>
-            <div class="chairs-image">
-              <img src="img/chairs.png" alt="chairs" class="chairs">
-            </div>
-            <div class="info-block">
-              <h2 class="info-h2">Discover yourself with nature</h2>
-              <p class="info-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
-              <button class="info-btn">Learn More</button>
-            </div>
-          </div>
-        </section>
-        <section class="news">
-          <div class="news-wrap">
-            <div class="news-title">
-              <h2 class="title-h2">News & Updates</h2>
-              <div class="title-all-post">
-                <div class="hr-line"></div><span class="view">View all posts</span><img src="img/arrow-right.svg" alt="arrow" class="arrow">
+            <div class="small-card-wrap">
+              <div class="lush">
+                <img src="img/lush.png" alt="lush" class="lush-img">
+                <span class="lush-span">Lush Gardens</span>
+                <p class="lush-p">Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt facilisis
+                  nunc lorem </p>
+                <span class="lush-date">December 16, 2021</span>
               </div>
-            </div>
-            <div class="big-card-wrap">
-              <div class="plants">
-                <img src="img/plants.png" alt="plants" class="plants-img">
-                <span class="plants-span">Plants Around Us</span>
-                <p class="plants-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum dolor sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <span class="plants-date">December 23, 2021</span>
+              <div class="exotic">
+                <img src="img/exotic.png" alt="exotic-plants" class="exotic-img">
+                <span class="exotic-span">Exotic Nature</span>
+                <p class="exotic-p">Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt facilisis
+                  nunc lorem </p>
+                <span class="exotic-date">November 11, 2021</span>
               </div>
-              <div class="small-card-wrap">
-                <div class="lush">
-                  <img src="img/lush.png" alt="lush" class="lush-img">
-                  <span class="lush-span">Lush Gardens</span>
-                  <p class="lush-p">Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt facilisis nunc lorem </p>
-                  <span class="lush-date">December 16, 2021</span>
-                </div>
-                <div class="exotic">
-                  <img src="img/exotic.png" alt="exotic-plants" class="exotic-img">
-                  <span class="exotic-span">Exotic Nature</span>
-                  <p class="exotic-p">Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt facilisis nunc lorem </p>
-                  <span class="exotic-date">November 11, 2021</span>
-                </div>
-                <div class="soil">
-                  <img src="img/soil.png" alt="soil" class="soil-img">
-                  <span class="soil-span">It Starts with Soil</span>
-                  <p class="soil-p">Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt facilisis nunc lorem </p>
-                  <span class="soil-date">November 3, 2021</span>
-                </div>
+              <div class="soil">
+                <img src="img/soil.png" alt="soil" class="soil-img">
+                <span class="soil-span">It Starts with Soil</span>
+                <p class="soil-p">Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt facilisis
+                  nunc lorem </p>
+                <span class="soil-date">November 3, 2021</span>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
-    <script src="js/header.js"></script>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="contacts">
+        <div class="contacts-logo">
+          <img src="img/logo-w.svg" class="contacts-logo-img" alt="logo">
+          <p class="contacts-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem
+            ipsum dolor sit amet, consectetur adipiscing.</p>
+        </div>
+        <ul class="contacts-nav">
+          <li class="nav-item sitemap"><span>Sitemap</span></li>
+          <li class="nav-item home"><a href="#">Home</a></li>
+          <li class="nav-item visit"><a href="#">Visit</a></li>
+          <li class="nav-item exhibitions"><a href="#">Exhibitions</a></li>
+          <li class="nav-item programs"><a href="#">Programs & Events</a></li>
+          <li class="nav-item store"><a href="#">Store</a></li>
+          <li class="nav-item membership"><a href="#">Membership</a></li>
+        </ul>
+        <div class="socials">
+          <span class="social-span">Connect</span>
+          <div class="social-container">
+            <img src="img/twitter.svg" alt="twitter" class="twitter">
+            <img src="img/facebook.svg" alt="facebook" class="facebook">
+            <img src="img/linkedin.svg" alt="linkenid" class="linkedin">
+            <img src="img/mail.svg" alt="mail" class="mail">
+          </div>
+        </div>
+      </div>
+      <div class="rights">
+        <div class="rights-wrap">
+          <span class="rigths-text">© 2021 Mist Gardens. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/header.js"></script>
 </body>
+
 </html>

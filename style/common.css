@@ -5,6 +5,7 @@
 @import url(intro.css);
 @import url(discover.css);
 @import url(news.css);
+@import url(footer.css);
 
 :root {
   --base-white: #fff;
@@ -15,27 +16,23 @@
   --news-block: #C4C4C4;
 }
 
-.body-wrapper {
+.body-wrapper, .footer {
   max-width: 1400px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
-.body-wrapper .main {
+.body-wrapper .main, .footer .contacts{
   margin: 0 16px;
-  /* position: relative; */
 }
 
 @media screen and (min-width: 992px) {
-  .body-wrapper .main {
+  .body-wrapper .main, .footer .contacts {
     margin: 0 50px;
   }
 }
 
 @media screen and (min-width: 1140px) {
-  .body-wrapper .main {
+  .body-wrapper .main, .footer .contacts {
     margin: 0 100px;
   }
 }
-
-/* font-family: 'Libre Baskerville', serif;
-font-family: 'Roboto', sans-serif; */
