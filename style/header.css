@@ -61,7 +61,8 @@
           grid-row: 6/7; }
         .header .container .navbar .nav-links .membership {
           grid-column: 1/2;
-          grid-row: 7/8; }
+          grid-row: 7/8;
+          cursor: pointer; }
         .header .container .navbar .nav-links li {
           list-style-type: none; }
           .header .container .navbar .nav-links li a {
@@ -97,7 +98,8 @@
           font-size: 14px;
           line-height: 16px;
           letter-spacing: 0.15em;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          cursor: pointer; }
       .header .container .navbar .nav-links::before {
         content: "";
         background-image: url("../img/leaf.svg");

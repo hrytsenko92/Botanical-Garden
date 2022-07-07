@@ -63,6 +63,19 @@
           text-decoration: none;
           color: var(--base-white);
           text-align: center;
+          &::after {
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            transition: 0.3s ease all;
+          }
+          &:hover::after {
+            width: 100%;
+          }
         }
       }
       .socials {
@@ -92,6 +105,7 @@
                 object-fit: cover;
                 object-position: center;
                 margin: 0 16px;
+                cursor: pointer;
             }
             }
         }

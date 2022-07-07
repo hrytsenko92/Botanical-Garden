@@ -56,6 +56,17 @@
         text-decoration: none;
         color: var(--base-white);
         text-align: center; }
+        .footer .contacts .contacts-nav a::after {
+          position: absolute;
+          content: "";
+          background-color: #fff;
+          bottom: -5px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          transition: 0.3s ease all; }
+        .footer .contacts .contacts-nav a:hover::after {
+          width: 100%; }
     .footer .contacts .socials {
       display: flex;
       flex-flow: column nowrap;
@@ -81,7 +92,8 @@
           height: 24px;
           object-fit: cover;
           object-position: center;
-          margin: 0 16px; }
+          margin: 0 16px;
+          cursor: pointer; }
 
   .rights .rights-wrap {
     display: flex;

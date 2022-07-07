@@ -1,6 +1,7 @@
 @media screen and (min-width: 375px) {
   .news {
     .news-wrap {
+      margin-top: 48px;
       .news-title {
         display: flex;
         flex-flow: column nowrap;
@@ -248,6 +249,7 @@
 @media screen and (min-width: 744px) {
   .news {
     .news-wrap {
+      margin-top: 65px;
       .news-title  {
         .title-h2 {
           font-size: 45px;
@@ -381,6 +383,7 @@
 @media screen and (min-width: 1140px) {
   .news {
     .news-wrap {
+      margin-top: 86px;
       .big-card-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
